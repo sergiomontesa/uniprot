@@ -1,0 +1,21 @@
+{
+  "name": "EMBL",
+  "displayName": "EMBL",
+  "category": "SEQ",
+  "uriLink": "https://www.ebi.ac.uk/ena/data/view/%id",
+  "attributes": [
+    {
+      "name": "ProteinId",
+      "xmlTag": "protein sequence ID",
+      "uriLink": "https://www.ebi.ac.uk/ena/data/view/%ProteinId"
+    },
+    {
+      "name": "Status",
+      "xmlTag": "status"
+    },
+    {
+      "name": "MoleculeType",
+      "xmlTag": "molecule type"
+    }
+  ]
+}

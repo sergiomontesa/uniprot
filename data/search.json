@@ -1,0 +1,2301 @@
+{
+  "results": [
+    {
+      "entryType": "UniProtKB reviewed (Swiss-Prot)",
+      "primaryAccession": "I6Y0R5",
+      "uniProtkbId": "FOLC_MYCTU",
+      "entryAudit": {
+        "firstPublicDate": "2017-02-15",
+        "lastAnnotationUpdateDate": "2022-08-03",
+        "lastSequenceUpdateDate": "2012-10-03",
+        "entryVersion": 69,
+        "sequenceVersion": 1
+      },
+      "annotationScore": 5,
+      "organism": {
+        "scientificName": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+        "taxonId": 83332,
+        "lineage": [
+          "Bacteria",
+          "Actinobacteria",
+          "Corynebacteriales",
+          "Mycobacteriaceae",
+          "Mycobacterium",
+          "Mycobacterium tuberculosis complex"
+        ]
+      },
+      "proteinExistence": "1: Evidence at protein level",
+      "proteinDescription": {
+        "recommendedName": {
+          "fullName": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000303",
+                "source": "PubMed",
+                "id": "23118010"
+              }
+            ],
+            "value": "Dihydrofolate synthase/folylpolyglutamate synthase"
+          },
+          "shortNames": [
+            {
+              "value": "DHFS / FPGS"
+            }
+          ],
+          "ecNumbers": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "23118010"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "24366731"
+                }
+              ],
+              "value": "6.3.2.12"
+            },
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P08192"
+                }
+              ],
+              "value": "6.3.2.17"
+            }
+          ]
+        },
+        "alternativeNames": [
+          {
+            "fullName": {
+              "value": "Folylpoly-gamma-glutamate synthetase"
+            }
+          },
+          {
+            "fullName": {
+              "value": "Tetrahydrofolylpolyglutamate synthase"
+            }
+          }
+        ]
+      },
+      "genes": [
+        {
+          "geneName": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000312",
+                "source": "EMBL",
+                "id": "CCP45240.1"
+              }
+            ],
+            "value": "folC"
+          },
+          "orderedLocusNames": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000312",
+                  "source": "EMBL",
+                  "id": "CCP45240.1"
+                }
+              ],
+              "value": "Rv2447c"
+            },
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000312",
+                  "source": "EMBL",
+                  "id": "AIR15214.1"
+                }
+              ],
+              "value": "LH57_13380"
+            }
+          ]
+        }
+      ],
+      "comments": [
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P08192"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "23118010"
+                }
+              ],
+              "value": "Catalyzes the addition of a glutamate residue to dihydropteroate (7,8-dihydropteroate or H2Pte) to form dihydrofolate (7,8-dihydrofolate monoglutamate or H2Pte-Glu) (PubMed:23118010). Also catalyzes successive additions of L-glutamate to tetrahydrofolate, leading to folylpolyglutamate derivatives (By similarity)"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "23118010"
+                },
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "23779105"
+                }
+              ],
+              "value": "Is involved in the bioactivation of the antituberculous drug para-aminosalicylic acid (PAS). Is able to use hydroxy-dihydropteroate (H2PtePAS) as substrate, which is the product formed by the action of DHPS (FolP1) on PAS, leading to hydroxy-dihydrofolate (H2PtePAS-Glu). This compound inhibits dihydrofolate reductase DHFR (DfrA), the next enzyme in the folate pathway, and thus disrupts the folate-dependent metabolic pathways"
+            }
+          ],
+          "commentType": "FUNCTION"
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "7,8-dihydropteroate + ATP + L-glutamate = 7,8-dihydrofolate + ADP + H(+) + phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:23584"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:17839"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:29985"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:30616"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:57451"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:456216"
+              }
+            ],
+            "ecNumber": "6.3.2.12",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "23118010"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "24366731"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "CATALYTIC ACTIVITY",
+          "reaction": {
+            "name": "(6S)-5,6,7,8-tetrahydrofolyl-(gamma-L-Glu)(n) + ATP + L-glutamate = (6S)-5,6,7,8-tetrahydrofolyl-(gamma-L-Glu)(n+1) + ADP + H(+) + phosphate",
+            "reactionCrossReferences": [
+              {
+                "database": "Rhea",
+                "id": "RHEA:10580"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:14738"
+              },
+              {
+                "database": "Rhea",
+                "id": "RHEA-COMP:14740"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:15378"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:29985"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:30616"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:43474"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:141005"
+              },
+              {
+                "database": "ChEBI",
+                "id": "CHEBI:456216"
+              }
+            ],
+            "ecNumber": "6.3.2.17",
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000250",
+                "source": "UniProtKB",
+                "id": "P08192"
+              }
+            ]
+          }
+        },
+        {
+          "commentType": "COFACTOR",
+          "cofactors": [
+            {
+              "name": "Mg(2+)",
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P08192"
+                }
+              ],
+              "cofactorCrossReference": {
+                "database": "ChEBI",
+                "id": "CHEBI:18420"
+              }
+            }
+          ],
+          "note": {
+            "texts": [
+              {
+                "evidences": [
+                  {
+                    "evidenceCode": "ECO:0000305",
+                    "source": "PubMed",
+                    "id": "18566510"
+                  }
+                ],
+                "value": "Binds 2 Mg(2+) ions per subunit."
+              }
+            ]
+          }
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305",
+                  "source": "PubMed",
+                  "id": "23118010"
+                }
+              ],
+              "value": "Cofactor biosynthesis; tetrahydrofolate biosynthesis; 7,8-dihydrofolate from 2-amino-4-hydroxy-6-hydroxymethyl-7,8-dihydropteridine diphosphate and 4-aminobenzoate: step 2/2"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000250",
+                  "source": "UniProtKB",
+                  "id": "P08192"
+                }
+              ],
+              "value": "Cofactor biosynthesis; tetrahydrofolylpolyglutamate biosynthesis"
+            }
+          ],
+          "commentType": "PATHWAY"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "16754987"
+                }
+              ],
+              "value": "Monomer"
+            }
+          ],
+          "commentType": "SUBUNIT"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "18566510"
+                }
+              ],
+              "value": "Is folded into two distinct domains, an N-terminal ATPase domain and a C-terminal Rossmann-fold domain, which are joined by a flexible linker"
+            }
+          ],
+          "commentType": "DOMAIN"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "12657046"
+                }
+              ],
+              "value": "Cells lacking this gene display impaired growth"
+            }
+          ],
+          "commentType": "DISRUPTION PHENOTYPE"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "23779105"
+                },
+                {
+                  "evidenceCode": "ECO:0000269",
+                  "source": "PubMed",
+                  "id": "24366731"
+                }
+              ],
+              "value": "Mutations within this gene in the H2Pte binding pocket are responsible for PAS resistance in M.tuberculosis clinical isolates and laboratory strains. FolC-linked PAS resistance is mediated by altered substrate specificity that results in the failure to generate levels of H2PtePAS-Glu that are necessary to inhibit DHFR (DfrA); therefore, a blockage of PAS bioactivation causes PAS resistance"
+            }
+          ],
+          "commentType": "MISCELLANEOUS"
+        },
+        {
+          "texts": [
+            {
+              "evidences": [
+                {
+                  "evidenceCode": "ECO:0000305"
+                }
+              ],
+              "value": "Belongs to the folylpolyglutamate synthase family"
+            }
+          ],
+          "commentType": "SIMILARITY"
+        }
+      ],
+      "features": [
+        {
+          "type": "Chain",
+          "location": {
+            "start": {
+              "value": 1,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 487,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "Dihydrofolate synthase/folylpolyglutamate synthase",
+          "featureId": "PRO_0000439040"
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 44,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 46,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17839"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P08192"
+            }
+          ],
+          "ligand": {
+            "name": "7,8-dihydropteroate",
+            "id": "ChEBI:CHEBI:17839"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 74,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 77,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:30616"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "2VOR"
+            }
+          ],
+          "ligand": {
+            "name": "ATP",
+            "id": "ChEBI:CHEBI:30616"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 76,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 76,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18420"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            }
+          ],
+          "ligand": {
+            "name": "Mg(2+)",
+            "id": "ChEBI:CHEBI:18420",
+            "label": "1"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 98,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 98,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18420"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            }
+          ],
+          "ligand": {
+            "name": "Mg(2+)",
+            "id": "ChEBI:CHEBI:18420",
+            "label": "1"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 150,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 153,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17839"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P08192"
+            }
+          ],
+          "ligand": {
+            "name": "7,8-dihydropteroate",
+            "id": "ChEBI:CHEBI:17839"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 174,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 174,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18420"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            }
+          ],
+          "ligand": {
+            "name": "Mg(2+)",
+            "id": "ChEBI:CHEBI:18420",
+            "label": "1"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 181,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 183,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:17839"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000250",
+              "source": "UniProtKB",
+              "id": "P08192"
+            }
+          ],
+          "ligand": {
+            "name": "7,8-dihydropteroate",
+            "id": "ChEBI:CHEBI:17839"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 201,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 201,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18420"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            }
+          ],
+          "ligand": {
+            "name": "Mg(2+)",
+            "id": "ChEBI:CHEBI:18420",
+            "label": "2"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 203,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 203,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18420"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            }
+          ],
+          "ligand": {
+            "name": "Mg(2+)",
+            "id": "ChEBI:CHEBI:18420",
+            "label": "2"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 301,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 301,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:30616"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "2VOR"
+            }
+          ],
+          "ligand": {
+            "name": "ATP",
+            "id": "ChEBI:CHEBI:30616"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 338,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 338,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:30616"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "2VOR"
+            }
+          ],
+          "ligand": {
+            "name": "ATP",
+            "id": "ChEBI:CHEBI:30616"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 351,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 354,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:30616"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            },
+            {
+              "evidenceCode": "ECO:0007744",
+              "source": "PDB",
+              "id": "2VOR"
+            }
+          ],
+          "ligand": {
+            "name": "ATP",
+            "id": "ChEBI:CHEBI:30616"
+          }
+        },
+        {
+          "type": "Binding site",
+          "location": {
+            "start": {
+              "value": 384,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 384,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "",
+          "featureCrossReferences": [
+            {
+              "database": "ChEBI",
+              "id": "CHEBI:18420"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "18566510"
+            }
+          ],
+          "ligand": {
+            "name": "Mg(2+)",
+            "id": "ChEBI:CHEBI:18420",
+            "label": "2"
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 40,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 40,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in a spontaneous PAS-resistant mutant strain; complementation with wild-type folC restores PAS susceptibility, confirmimg that this mutation confers high level resistance to PAS",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "23779105"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "E",
+            "alternativeSequences": [
+              "A"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 40,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 40,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in clinical isolates: Q274 and 501063; PAS-resistant; complementation with wild-type folC restores PAS susceptibility",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "E",
+            "alternativeSequences": [
+              "G"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 43,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 43,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in clinical isolate: Q36; PAS-resistant; complementation with wild-type folC restores PAS susceptibility",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "I",
+            "alternativeSequences": [
+              "A"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 43,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 43,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in clinical isolates: Q449 and 1314; PAS-resistant; complementation with wild-type folC restores PAS susceptibility; 7-fold reduction in DHFS activity relative to wild-type; loss of the ability to glutaminate H2PtePAS",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "I",
+            "alternativeSequences": [
+              "T"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 73,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 73,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in a spontaneous PAS-resistant mutant strain",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "N",
+            "alternativeSequences": [
+              "S"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 150,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 150,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in a spontaneous PAS-resistant mutant strain; complementation with wild-type folC restores PAS susceptibility",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "S",
+            "alternativeSequences": [
+              "G"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 152,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 152,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in a spontaneous PAS-resistant mutant strain; complementation with wild-type folC restores PAS susceptibility",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "F",
+            "alternativeSequences": [
+              "S"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 153,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 153,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in a spontaneous PAS-resistant mutant strain; complementation with wild-type folC restores PAS susceptibility; 5-fold reduction in DHFS activity relative to wild-type; loss of the ability to glutaminate H2PtePAS",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "E",
+            "alternativeSequences": [
+              "A"
+            ]
+          }
+        },
+        {
+          "type": "Natural variant",
+          "location": {
+            "start": {
+              "value": 153,
+              "modifier": "EXACT"
+            },
+            "end": {
+              "value": 153,
+              "modifier": "EXACT"
+            }
+          },
+          "description": "in a spontaneous PAS-resistant mutant strain; complementation with wild-type folC restores PAS susceptibility",
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24366731"
+            }
+          ],
+          "featureId": "",
+          "alternativeSequence": {
+            "originalSequence": "E",
+            "alternativeSequences": [
+              "G"
+            ]
+          }
+        }
+      ],
+      "keywords": [
+        {
+          "id": "KW-0002",
+          "category": "Technical term",
+          "name": "3D-structure"
+        },
+        {
+          "id": "KW-0046",
+          "category": "Biological process",
+          "name": "Antibiotic resistance"
+        },
+        {
+          "id": "KW-0067",
+          "category": "Ligand",
+          "name": "ATP-binding"
+        },
+        {
+          "id": "KW-0289",
+          "category": "Biological process",
+          "name": "Folate biosynthesis"
+        },
+        {
+          "id": "KW-0436",
+          "category": "Molecular function",
+          "name": "Ligase"
+        },
+        {
+          "id": "KW-0460",
+          "category": "Ligand",
+          "name": "Magnesium"
+        },
+        {
+          "id": "KW-0479",
+          "category": "Ligand",
+          "name": "Metal-binding"
+        },
+        {
+          "id": "KW-0547",
+          "category": "Ligand",
+          "name": "Nucleotide-binding"
+        },
+        {
+          "id": "KW-1185",
+          "category": "Technical term",
+          "name": "Reference proteome"
+        }
+      ],
+      "references": [
+        {
+          "citation": {
+            "id": "9634230",
+            "citationType": "journal article",
+            "authors": [
+              "Cole S.T.",
+              "Brosch R.",
+              "Parkhill J.",
+              "Garnier T.",
+              "Churcher C.M.",
+              "Harris D.E.",
+              "Gordon S.V.",
+              "Eiglmeier K.",
+              "Gas S.",
+              "Barry C.E. III",
+              "Tekaia F.",
+              "Badcock K.",
+              "Basham D.",
+              "Brown D.",
+              "Chillingworth T.",
+              "Connor R.",
+              "Davies R.M.",
+              "Devlin K.",
+              "Feltwell T.",
+              "Gentles S.",
+              "Hamlin N.",
+              "Holroyd S.",
+              "Hornsby T.",
+              "Jagels K.",
+              "Krogh A.",
+              "McLean J.",
+              "Moule S.",
+              "Murphy L.D.",
+              "Oliver S.",
+              "Osborne J.",
+              "Quail M.A.",
+              "Rajandream M.A.",
+              "Rogers J.",
+              "Rutter S.",
+              "Seeger K.",
+              "Skelton S.",
+              "Squares S.",
+              "Squares R.",
+              "Sulston J.E.",
+              "Taylor K.",
+              "Whitehead S.",
+              "Barrell B.G."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "9634230"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1038/31159"
+              }
+            ],
+            "title": "Deciphering the biology of Mycobacterium tuberculosis from the complete genome sequence.",
+            "publicationDate": "1998",
+            "journal": "Nature",
+            "firstPage": "537",
+            "lastPage": "544",
+            "volume": "393"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "referenceComments": [
+            {
+              "value": "ATCC 25618 / H37Rv",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "CI-FERGJD2R2M41L",
+            "citationType": "submission",
+            "authors": [
+              "Lew J.M."
+            ],
+            "publicationDate": "DEC-2012",
+            "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+          },
+          "referencePositions": [
+            "IDENTIFICATION",
+            "GENOME REANNOTATION"
+          ],
+          "referenceComments": [
+            {
+              "value": "ATCC 25618 / H37Rv",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "CI-QPIF9DTFF2F",
+            "citationType": "submission",
+            "authors": [
+              "Hazbon M.H.",
+              "Riojas M.A.",
+              "Damon A.M.",
+              "Alalade R.O.",
+              "Cantwell B.J.",
+              "Monaco A.",
+              "King S.",
+              "Sohrabi A."
+            ],
+            "title": "Phylogenetic analysis of Mycobacterial species using whole genome sequences.",
+            "publicationDate": "SEP-2014",
+            "submissionDatabase": "EMBL/GenBank/DDBJ databases"
+          },
+          "referencePositions": [
+            "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+          ],
+          "referenceComments": [
+            {
+              "value": "ATCC 27294 / TMC 102 / H37Rv",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "12657046",
+            "citationType": "journal article",
+            "authors": [
+              "Sassetti C.M.",
+              "Boyd D.H.",
+              "Rubin E.J."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "12657046"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1046/j.1365-2958.2003.03425.x"
+              }
+            ],
+            "title": "Genes required for mycobacterial growth defined by high density mutagenesis.",
+            "publicationDate": "2003",
+            "journal": "Mol. Microbiol.",
+            "firstPage": "77",
+            "lastPage": "84",
+            "volume": "48"
+          },
+          "referencePositions": [
+            "DISRUPTION PHENOTYPE"
+          ],
+          "referenceComments": [
+            {
+              "value": "H37Rv",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "16754987",
+            "citationType": "journal article",
+            "authors": [
+              "Young P.G.",
+              "Smith C.A.",
+              "Sun X.",
+              "Baker E.N.",
+              "Metcalf P."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "16754987"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1107/s1744309106017180"
+              }
+            ],
+            "title": "Purification, crystallization and preliminary X-ray analysis of Mycobacterium tuberculosis folylpolyglutamate synthase (MtbFPGS).",
+            "publicationDate": "2006",
+            "journal": "Acta Crystallogr. F",
+            "firstPage": "579",
+            "lastPage": "582",
+            "volume": "62"
+          },
+          "referencePositions": [
+            "CRYSTALLIZATION",
+            "SUBUNIT"
+          ]
+        },
+        {
+          "citation": {
+            "id": "21969609",
+            "citationType": "journal article",
+            "authors": [
+              "Kelkar D.S.",
+              "Kumar D.",
+              "Kumar P.",
+              "Balakrishnan L.",
+              "Muthusamy B.",
+              "Yadav A.K.",
+              "Shrivastava P.",
+              "Marimuthu A.",
+              "Anand S.",
+              "Sundaram H.",
+              "Kingsbury R.",
+              "Harsha H.C.",
+              "Nair B.",
+              "Prasad T.S.",
+              "Chauhan D.S.",
+              "Katoch K.",
+              "Katoch V.M.",
+              "Kumar P.",
+              "Chaerkady R.",
+              "Ramachandran S.",
+              "Dash D.",
+              "Pandey A."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "21969609"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/mcp.m111.011627"
+              }
+            ],
+            "title": "Proteogenomic analysis of Mycobacterium tuberculosis by high resolution mass spectrometry.",
+            "publicationDate": "2011",
+            "journal": "Mol. Cell. Proteomics",
+            "firstPage": "M111.011627",
+            "lastPage": "M111.011627",
+            "volume": "10"
+          },
+          "referencePositions": [
+            "IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS]"
+          ],
+          "referenceComments": [
+            {
+              "value": "ATCC 25618 / H37Rv",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "23779105",
+            "citationType": "journal article",
+            "authors": [
+              "Zheng J.",
+              "Rubin E.J.",
+              "Bifani P.",
+              "Mathys V.",
+              "Lim V.",
+              "Au M.",
+              "Jang J.",
+              "Nam J.",
+              "Dick T.",
+              "Walker J.R.",
+              "Pethe K.",
+              "Camacho L.R."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "23779105"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1074/jbc.m113.475798"
+              }
+            ],
+            "title": "para-Aminosalicylic acid is a prodrug targeting dihydrofolate reductase in Mycobacterium tuberculosis.",
+            "publicationDate": "2013",
+            "journal": "J. Biol. Chem.",
+            "firstPage": "23447",
+            "lastPage": "23456",
+            "volume": "288"
+          },
+          "referencePositions": [
+            "FUNCTION",
+            "DRUG RESISTANCE",
+            "PAS-RESISTANT VARIANT ALA-40"
+          ],
+          "referenceComments": [
+            {
+              "value": "H37Rv",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "23118010",
+            "citationType": "journal article",
+            "authors": [
+              "Chakraborty S.",
+              "Gruber T.",
+              "Barry C.E. III",
+              "Boshoff H.I.",
+              "Rhee K.Y."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "23118010"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1126/science.1228980"
+              }
+            ],
+            "title": "Para-aminosalicylic acid acts as an alternative substrate of folate metabolism in Mycobacterium tuberculosis.",
+            "publicationDate": "2013",
+            "journal": "Science",
+            "firstPage": "88",
+            "lastPage": "91",
+            "volume": "339"
+          },
+          "referencePositions": [
+            "FUNCTION",
+            "CATALYTIC ACTIVITY"
+          ],
+          "referenceComments": [
+            {
+              "value": "H37Rv",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "24366731",
+            "citationType": "journal article",
+            "authors": [
+              "Zhao F.",
+              "Wang X.D.",
+              "Erber L.N.",
+              "Luo M.",
+              "Guo A.Z.",
+              "Yang S.S.",
+              "Gu J.",
+              "Turman B.J.",
+              "Gao Y.R.",
+              "Li D.F.",
+              "Cui Z.Q.",
+              "Zhang Z.P.",
+              "Bi L.J.",
+              "Baughn A.D.",
+              "Zhang X.E.",
+              "Deng J.Y."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "24366731"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1128/aac.01775-13"
+              }
+            ],
+            "title": "Binding pocket alterations in dihydrofolate synthase confer resistance to para-aminosalicylic acid in clinical isolates of Mycobacterium tuberculosis.",
+            "publicationDate": "2014",
+            "journal": "Antimicrob. Agents Chemother.",
+            "firstPage": "1479",
+            "lastPage": "1487",
+            "volume": "58"
+          },
+          "referencePositions": [
+            "CATALYTIC ACTIVITY",
+            "DRUG RESISTANCE",
+            "PAS-RESISTANT VARIANTS GLY-40; ALA-43; THR-43; SER-73; GLY-150; SER-152; ALA-153 AND GLY-153"
+          ],
+          "referenceComments": [
+            {
+              "value": "ATCC 25177 / H37Ra",
+              "type": "STRAIN"
+            }
+          ]
+        },
+        {
+          "citation": {
+            "id": "18566510",
+            "citationType": "journal article",
+            "authors": [
+              "Young P.G.",
+              "Smith C.A.",
+              "Metcalf P.",
+              "Baker E.N."
+            ],
+            "citationCrossReferences": [
+              {
+                "database": "PubMed",
+                "id": "18566510"
+              },
+              {
+                "database": "DOI",
+                "id": "10.1107/s0907444908012262"
+              }
+            ],
+            "title": "Structures of Mycobacterium tuberculosis folylpolyglutamate synthase complexed with ADP and AMPPCP.",
+            "publicationDate": "2008",
+            "journal": "Acta Crystallogr. D",
+            "firstPage": "745",
+            "lastPage": "753",
+            "volume": "64"
+          },
+          "referencePositions": [
+            "X-RAY CRYSTALLOGRAPHY (2.00 ANGSTROMS) IN COMPLEXES WITH COBALT IONS; ADP AND ATP ANALOG",
+            "FUNCTION",
+            "DOMAIN"
+          ]
+        }
+      ],
+      "uniProtKBCrossReferences": [
+        {
+          "database": "EMBL",
+          "id": "AL123456",
+          "properties": [
+            {
+              "key": "ProteinId",
+              "value": "CCP45240.1"
+            },
+            {
+              "key": "Status",
+              "value": "-"
+            },
+            {
+              "key": "MoleculeType",
+              "value": "Genomic_DNA"
+            }
+          ]
+        },
+        {
+          "database": "EMBL",
+          "id": "CP009480",
+          "properties": [
+            {
+              "key": "ProteinId",
+              "value": "AIR15214.1"
+            },
+            {
+              "key": "Status",
+              "value": "-"
+            },
+            {
+              "key": "MoleculeType",
+              "value": "Genomic_DNA"
+            }
+          ]
+        },
+        {
+          "database": "RefSeq",
+          "id": "NP_216963.1",
+          "properties": [
+            {
+              "key": "NucleotideSequenceId",
+              "value": "NC_000962.3"
+            }
+          ]
+        },
+        {
+          "database": "RefSeq",
+          "id": "WP_003899324.1",
+          "properties": [
+            {
+              "key": "NucleotideSequenceId",
+              "value": "NZ_NVQJ01000024.1"
+            }
+          ]
+        },
+        {
+          "database": "PDB",
+          "id": "2VOR",
+          "properties": [
+            {
+              "key": "Method",
+              "value": "X-ray"
+            },
+            {
+              "key": "Resolution",
+              "value": "2.30 A"
+            },
+            {
+              "key": "Chains",
+              "value": "A=1-487"
+            }
+          ]
+        },
+        {
+          "database": "PDB",
+          "id": "2VOS",
+          "properties": [
+            {
+              "key": "Method",
+              "value": "X-ray"
+            },
+            {
+              "key": "Resolution",
+              "value": "2.00 A"
+            },
+            {
+              "key": "Chains",
+              "value": "A=1-487"
+            }
+          ]
+        },
+        {
+          "database": "PDBsum",
+          "id": "2VOR",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "PDBsum",
+          "id": "2VOS",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "AlphaFoldDB",
+          "id": "I6Y0R5",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "SMR",
+          "id": "I6Y0R5",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "STRING",
+          "id": "83332.Rv2447c",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "PaxDb",
+          "id": "I6Y0R5",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "PRIDE",
+          "id": "I6Y0R5",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "DNASU",
+          "id": "885902",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "GeneID",
+          "id": "885902",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "KEGG",
+          "id": "mtu:Rv2447c",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "PATRIC",
+          "id": "fig|83332.111.peg.2739",
+          "properties": [
+            {
+              "key": "GeneDesignation",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "TubercuList",
+          "id": "Rv2447c",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "eggNOG",
+          "id": "COG0285",
+          "properties": [
+            {
+              "key": "ToxonomicScope",
+              "value": "Bacteria"
+            }
+          ]
+        },
+        {
+          "database": "HOGENOM",
+          "id": "CLU_015869_1_2_11",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "OMA",
+          "id": "YFEMGTL",
+          "properties": [
+            {
+              "key": "Fingerprint",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "PhylomeDB",
+          "id": "I6Y0R5",
+          "properties": [
+            {
+              "key": "Description",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "BRENDA",
+          "id": "6.3.2.12",
+          "properties": [
+            {
+              "key": "OrganismId",
+              "value": "3445"
+            }
+          ]
+        },
+        {
+          "database": "UniPathway",
+          "id": "UPA00077",
+          "properties": [
+            {
+              "key": "RectionId",
+              "value": "UER00157"
+            }
+          ]
+        },
+        {
+          "database": "UniPathway",
+          "id": "UPA00850",
+          "properties": [
+            {
+              "key": "RectionId",
+              "value": "-"
+            }
+          ]
+        },
+        {
+          "database": "Proteomes",
+          "id": "UP000001584",
+          "properties": [
+            {
+              "key": "Component",
+              "value": "Chromosome"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0005737",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "C:cytoplasm"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IBA:GO_Central"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000318",
+              "source": "PubMed",
+              "id": "21873635"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0005524",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "F:ATP binding"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IEA:UniProtKB-KW"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0008841",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "F:dihydrofolate synthase activity"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IBA:GO_Central"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000318",
+              "source": "PubMed",
+              "id": "21873635"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0046872",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "F:metal ion binding"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IEA:UniProtKB-KW"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0004326",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "F:tetrahydrofolylpolyglutamate synthase activity"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IBA:GO_Central"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000318",
+              "source": "PubMed",
+              "id": "21873635"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0046656",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "P:folic acid biosynthetic process"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IEA:UniProtKB-KW"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0009396",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "P:folic acid-containing compound biosynthetic process"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IBA:GO_Central"
+            }
+          ],
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000318",
+              "source": "PubMed",
+              "id": "21873635"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0046677",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "P:response to antibiotic"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IEA:UniProtKB-KW"
+            }
+          ]
+        },
+        {
+          "database": "GO",
+          "id": "GO:0046654",
+          "properties": [
+            {
+              "key": "GoTerm",
+              "value": "P:tetrahydrofolate biosynthetic process"
+            },
+            {
+              "key": "GoEvidenceType",
+              "value": "IEA:UniProtKB-UniPathway"
+            }
+          ]
+        },
+        {
+          "database": "Gene3D",
+          "id": "3.40.1190.10",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "-"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "Gene3D",
+          "id": "3.90.190.20",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "-"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "InterPro",
+          "id": "IPR001645",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Folylpolyglutamate_synth"
+            }
+          ]
+        },
+        {
+          "database": "InterPro",
+          "id": "IPR018109",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Folylpolyglutamate_synth_CS"
+            }
+          ]
+        },
+        {
+          "database": "InterPro",
+          "id": "IPR036565",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Mur-like_cat_sf"
+            }
+          ]
+        },
+        {
+          "database": "InterPro",
+          "id": "IPR004101",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Mur_ligase_C"
+            }
+          ]
+        },
+        {
+          "database": "InterPro",
+          "id": "IPR036615",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Mur_ligase_C_dom_sf"
+            }
+          ]
+        },
+        {
+          "database": "InterPro",
+          "id": "IPR013221",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Mur_ligase_cen"
+            }
+          ]
+        },
+        {
+          "database": "PANTHER",
+          "id": "PTHR11136",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "PTHR11136"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "Pfam",
+          "id": "PF02875",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Mur_ligase_C"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "Pfam",
+          "id": "PF08245",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "Mur_ligase_M"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "SUPFAM",
+          "id": "SSF53244",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "SSF53244"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "SUPFAM",
+          "id": "SSF53623",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "SSF53623"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "TIGRFAMs",
+          "id": "TIGR01499",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "folC"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        },
+        {
+          "database": "PROSITE",
+          "id": "PS01012",
+          "properties": [
+            {
+              "key": "EntryName",
+              "value": "FOLYLPOLYGLU_SYNT_2"
+            },
+            {
+              "key": "MatchStatus",
+              "value": "1"
+            }
+          ]
+        }
+      ],
+      "sequence": {
+        "value": "MNSTNSGPPDSGSATGVVPTPDEIASLLQVEHLLDQRWPETRIDPSLTRISALMDLLGSPQRSYPSIHIAGTNGKTSVARMVDALVTALHRRTGRTTSPHLQSPVERISIDGKPISPAQYVATYREIEPLVALIDQQSQASAGKGGPAMSKFEVLTAMAFAAFADAPVDVAVVEVGMGGRWDATNVINAPVAVITPISIDHVDYLGADIAGIAGEKAGIITRAPDGSPDTVAVIGRQVPKVMEVLLAESVRADASVAREDSEFAVLRRQIAVGGQVLQLQGLGGVYSDIYLPLHGEHQAHNAVLALASVEAFFGAGAQRQLDGDAVRAGFAAVTSPGRLERMRSAPTVFIDAAHNPAGASALAQTLAHEFDFRFLVGVLSVLGDKDVDGILAALEPVFDSVVVTHNGSPRALDVEALALAAGERFGPDRVRTAENLRDAIDVATSLVDDAAADPDVAGDAFSRTGIVITGSVVTAGAARTLFGRDPQ",
+        "length": 487,
+        "molWeight": 50779,
+        "crc64": "77D3A4E3D2DC59D0",
+        "md5": "1426216991EEAF159B8EC964657A0252"
+      },
+      "lineages": [
+        {
+          "scientificName": "Mycobacterium tuberculosis",
+          "taxonId": 1773,
+          "rank": "species",
+          "hidden": true
+        },
+        {
+          "scientificName": "Mycobacterium tuberculosis complex",
+          "taxonId": 77643,
+          "rank": "no rank",
+          "hidden": false
+        },
+        {
+          "scientificName": "Mycobacterium",
+          "taxonId": 1763,
+          "rank": "genus",
+          "hidden": false
+        },
+        {
+          "scientificName": "Mycobacteriaceae",
+          "taxonId": 1762,
+          "rank": "family",
+          "hidden": false
+        },
+        {
+          "scientificName": "Corynebacteriales",
+          "taxonId": 85007,
+          "rank": "order",
+          "hidden": false
+        },
+        {
+          "scientificName": "Actinomycetia",
+          "commonName": "high G+C Gram-positive bacteria",
+          "taxonId": 1760,
+          "rank": "class",
+          "hidden": true
+        },
+        {
+          "scientificName": "Actinobacteria",
+          "taxonId": 201174,
+          "rank": "phylum",
+          "hidden": false
+        },
+        {
+          "scientificName": "Terrabacteria group",
+          "taxonId": 1783272,
+          "rank": "no rank",
+          "hidden": true
+        },
+        {
+          "scientificName": "Bacteria",
+          "commonName": "eubacteria",
+          "taxonId": 2,
+          "rank": "superkingdom",
+          "hidden": false
+        },
+        {
+          "scientificName": "cellular organisms",
+          "taxonId": 131567,
+          "rank": "no rank",
+          "hidden": true
+        }
+      ],
+      "extraAttributes": {
+        "countByCommentType": {
+          "FUNCTION": 2,
+          "CATALYTIC ACTIVITY": 2,
+          "COFACTOR": 1,
+          "PATHWAY": 2,
+          "SUBUNIT": 1,
+          "DOMAIN": 1,
+          "DISRUPTION PHENOTYPE": 1,
+          "MISCELLANEOUS": 1,
+          "SIMILARITY": 1
+        },
+        "countByFeatureType": {
+          "Chain": 1,
+          "Binding site": 13,
+          "Natural variant": 9
+        },
+        "uniParcId": "UPI00000D1064"
+      }
+    }
+  ]
+}

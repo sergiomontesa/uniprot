@@ -1,0 +1,1075 @@
+{
+  "entryType": "UniProtKB reviewed (Swiss-Prot)",
+  "primaryAccession": "I6WZG6",
+  "secondaryAccessions": [
+    "O07812"
+  ],
+  "uniProtkbId": "ENCAP_MYCTU",
+  "entryAudit": {
+    "firstPublicDate": "2022-05-25",
+    "lastAnnotationUpdateDate": "2022-08-03",
+    "lastSequenceUpdateDate": "2012-10-03",
+    "entryVersion": 59,
+    "sequenceVersion": 1
+  },
+  "annotationScore": 5,
+  "organism": {
+    "scientificName": "Mycobacterium tuberculosis (strain ATCC 25618 / H37Rv)",
+    "taxonId": 83332,
+    "lineage": [
+      "Bacteria",
+      "Actinobacteria",
+      "Corynebacteriales",
+      "Mycobacteriaceae",
+      "Mycobacterium",
+      "Mycobacterium tuberculosis complex"
+    ]
+  },
+  "proteinExistence": "1: Evidence at protein level",
+  "proteinDescription": {
+    "recommendedName": {
+      "fullName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000303",
+            "source": "PubMed",
+            "id": "24855650"
+          }
+        ],
+        "value": "Type 1 encapsulin shell protein"
+      }
+    },
+    "alternativeNames": [
+      {
+        "fullName": {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "9596740"
+            }
+          ],
+          "value": "Culture filtrate protein 29"
+        },
+        "shortNames": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000303",
+                "source": "PubMed",
+                "id": "9596740"
+              }
+            ],
+            "value": "CFP29"
+          }
+        ]
+      }
+    ],
+    "contains": [
+      {
+        "recommendedName": {
+          "fullName": {
+            "value": "Type 1 encapsulin shell protein, N-terminally processed"
+          }
+        }
+      }
+    ]
+  },
+  "genes": [
+    {
+      "geneName": {
+        "evidences": [
+          {
+            "evidenceCode": "ECO:0000303",
+            "source": "PubMed",
+            "id": "24855650"
+          }
+        ],
+        "value": "enc"
+      },
+      "synonyms": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000303",
+              "source": "PubMed",
+              "id": "9596740"
+            }
+          ],
+          "value": "cfp29"
+        }
+      ],
+      "orderedLocusNames": [
+        {
+          "value": "Rv0798c"
+        }
+      ]
+    }
+  ],
+  "comments": [
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "24855650"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "34751132"
+            },
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "9596740"
+            },
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "24855650"
+            }
+          ],
+          "value": "Shell component of a type 1 encapsulin nanocompartment in situ; its cargo protects against oxidative stress at low pH. In situ and in E.coli assembles into proteinaceous shells about 22 nm in diameter with 2.5 nm thick walls (PubMed:34751132, PubMed:24855650). Cargo proteins are targeted to the interior via their C-terminal extensions; empty intact shells can be isolated in E.coli in the absence of cargo protein. There are at least 4 possible cargo proteins, DyP (encoded in the same locus), FolB, BfrB and Rv1762c; DyP and Rv1762c have been identified in vivo (PubMed:24855650). Probably involved in protection against oxidative damage from the host immune response (Probable) (PubMed:34751132). A T-cell antigen found in bacterial culture cell filtrates, stimulates mouse immune response. Does not have detectable bacteriocin activity (PubMed:9596740)"
+        }
+      ],
+      "commentType": "FUNCTION"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "9596740"
+            },
+            {
+              "evidenceCode": "ECO:0000305",
+              "source": "PubMed",
+              "id": "24855650"
+            }
+          ],
+          "value": "Multimeric (PubMed:9596740). The encapsulin nanocompartment is formed by 60 subunits (Probable). Monomers form pentamers which assemble to form shells. There are 12 pores where the pentamers meet as well as 3-fold axis channels and dimer channels; none are larger than 3-4 Angstroms in diameter. The N-terminus of the protein is inside the shell, the C-terminus is outside (Probable)"
+        }
+      ],
+      "commentType": "SUBUNIT"
+    },
+    {
+      "commentType": "SUBCELLULAR LOCATION",
+      "note": {
+        "texts": [
+          {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "20662102"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "34751132"
+              },
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "9596740"
+              },
+              {
+                "evidenceCode": "ECO:0000305",
+                "source": "PubMed",
+                "id": "34751132"
+              }
+            ],
+            "value": "Encapsulin microcompartments of this protein encapsulating DyP are found in situ (PubMed:34751132). Detected at low levels in short-term culture filtrate, the nanocompartment is very stable and may survive cell lysis, explaining its apparent secretion (PubMed:9596740) (Probable). Detected in infected host (mouse J774 cell line) exosomes (PubMed:20662102)"
+          }
+        ]
+      },
+      "subcellularLocations": [
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "24855650"
+              }
+            ],
+            "value": "Encapsulin nanocompartment",
+            "id": "SL-0550"
+          }
+        },
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "9596740"
+              }
+            ],
+            "value": "Secreted",
+            "id": "SL-0243"
+          }
+        },
+        {
+          "location": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "9596740"
+              }
+            ],
+            "value": "Cell membrane",
+            "id": "SL-0039"
+          },
+          "topology": {
+            "evidences": [
+              {
+                "evidenceCode": "ECO:0000269",
+                "source": "PubMed",
+                "id": "9596740"
+              }
+            ],
+            "value": "Peripheral membrane protein",
+            "id": "SL-9903"
+          }
+        }
+      ]
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "9596740"
+            }
+          ],
+          "value": "The initiator methionine is partially removed. When isolated from culture filtrate isoelectric focusing gives 3 bands, none of which are glycosylated"
+        }
+      ],
+      "commentType": "PTM"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "34751132"
+            }
+          ],
+          "value": "A single enc deletion survives less well after 3 days in 2.5 mM H2O2, pH 4.5 (mimics growth in the phagolysosome). A double dyp-enc deletion mutant cannot produce encapsulin nanocompartments, cells are highly sensitive to H2O2 at pH 4.5, mutants exhibit significant dysregulation of redox homeostasis, survive less well in C57BL/6 mouse-derived bone marrow cells and are more sensitive to pyrazinamide treatment in infected BALB/C mice"
+        }
+      ],
+      "commentType": "DISRUPTION PHENOTYPE"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000269",
+              "source": "PubMed",
+              "id": "9596740"
+            }
+          ],
+          "value": "Stimulates a strong IFN-gamma response in memory immune C57BL/6J mouse spleen T cells, recognized by monoclonal antibody HYB 71-2"
+        }
+      ],
+      "commentType": "MISCELLANEOUS"
+    },
+    {
+      "texts": [
+        {
+          "evidences": [
+            {
+              "evidenceCode": "ECO:0000305"
+            }
+          ],
+          "value": "Belongs to the encapsulin family. Family 1 subfamily"
+        }
+      ],
+      "commentType": "SIMILARITY"
+    }
+  ],
+  "features": [
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 265,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Type 1 encapsulin shell protein",
+      "featureId": "PRO_0000455313"
+    },
+    {
+      "type": "Initiator methionine",
+      "location": {
+        "start": {
+          "value": 1,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 1,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Removed; alternate",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000269",
+          "source": "PubMed",
+          "id": "9596740"
+        }
+      ]
+    },
+    {
+      "type": "Chain",
+      "location": {
+        "start": {
+          "value": 2,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 265,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "Type 1 encapsulin shell protein, N-terminally processed",
+      "featureId": "PRO_0000455314"
+    },
+    {
+      "type": "Sequence conflict",
+      "location": {
+        "start": {
+          "value": 242,
+          "modifier": "EXACT"
+        },
+        "end": {
+          "value": 242,
+          "modifier": "EXACT"
+        }
+      },
+      "description": "in Ref. 1; CAA73350",
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000305"
+        }
+      ],
+      "alternativeSequence": {
+        "originalSequence": "V",
+        "alternativeSequences": [
+          "E"
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    {
+      "id": "KW-1003",
+      "category": "Cellular component",
+      "name": "Cell membrane"
+    },
+    {
+      "id": "KW-0903",
+      "category": "Technical term",
+      "name": "Direct protein sequencing"
+    },
+    {
+      "id": "KW-1284",
+      "category": "Cellular component",
+      "name": "Encapsulin nanocompartment"
+    },
+    {
+      "id": "KW-0472",
+      "category": "Cellular component",
+      "name": "Membrane"
+    },
+    {
+      "id": "KW-1185",
+      "category": "Technical term",
+      "name": "Reference proteome"
+    },
+    {
+      "id": "KW-0964",
+      "category": "Cellular component",
+      "name": "Secreted"
+    },
+    {
+      "id": "KW-0843",
+      "category": "Biological process",
+      "name": "Virulence"
+    }
+  ],
+  "references": [
+    {
+      "citation": {
+        "id": "9596740",
+        "citationType": "journal article",
+        "authors": [
+          "Rosenkrands I.",
+          "Rasmussen P.B.",
+          "Carnio M.",
+          "Jacobsen S.",
+          "Theisen M.",
+          "Andersen P."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9596740"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1128/iai.66.6.2728-2735.1998"
+          }
+        ],
+        "title": "Identification and characterization of a 29-kilodalton protein from Mycobacterium tuberculosis culture filtrate recognized by mouse memory effector cells.",
+        "publicationDate": "1998",
+        "journal": "Infect. Immun.",
+        "firstPage": "2728",
+        "lastPage": "2735",
+        "volume": "66"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [GENOMIC DNA]",
+        "PROTEIN SEQUENCE OF 1-19",
+        "FUNCTION",
+        "SUBUNIT",
+        "SUBCELLULAR LOCATION"
+      ],
+      "referenceComments": [
+        {
+          "value": "H37Rv",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "citation": {
+        "id": "9634230",
+        "citationType": "journal article",
+        "authors": [
+          "Cole S.T.",
+          "Brosch R.",
+          "Parkhill J.",
+          "Garnier T.",
+          "Churcher C.M.",
+          "Harris D.E.",
+          "Gordon S.V.",
+          "Eiglmeier K.",
+          "Gas S.",
+          "Barry C.E. III",
+          "Tekaia F.",
+          "Badcock K.",
+          "Basham D.",
+          "Brown D.",
+          "Chillingworth T.",
+          "Connor R.",
+          "Davies R.M.",
+          "Devlin K.",
+          "Feltwell T.",
+          "Gentles S.",
+          "Hamlin N.",
+          "Holroyd S.",
+          "Hornsby T.",
+          "Jagels K.",
+          "Krogh A.",
+          "McLean J.",
+          "Moule S.",
+          "Murphy L.D.",
+          "Oliver S.",
+          "Osborne J.",
+          "Quail M.A.",
+          "Rajandream M.A.",
+          "Rogers J.",
+          "Rutter S.",
+          "Seeger K.",
+          "Skelton S.",
+          "Squares S.",
+          "Squares R.",
+          "Sulston J.E.",
+          "Taylor K.",
+          "Whitehead S.",
+          "Barrell B.G."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "9634230"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/31159"
+          }
+        ],
+        "title": "Deciphering the biology of Mycobacterium tuberculosis from the complete genome sequence.",
+        "publicationDate": "1998",
+        "journal": "Nature",
+        "firstPage": "537",
+        "lastPage": "544",
+        "volume": "393"
+      },
+      "referencePositions": [
+        "NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]"
+      ],
+      "referenceComments": [
+        {
+          "value": "ATCC 25618 / H37Rv",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "citation": {
+        "id": "20662102",
+        "citationType": "journal article",
+        "authors": [
+          "Giri P.K.",
+          "Kruh N.A.",
+          "Dobos K.M.",
+          "Schorey J.S."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "20662102"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1002/pmic.200900840"
+          }
+        ],
+        "title": "Proteomic analysis identifies highly antigenic proteins in exosomes from M. tuberculosis-infected and culture filtrate protein-treated macrophages.",
+        "publicationDate": "2010",
+        "journal": "Proteomics",
+        "firstPage": "3190",
+        "lastPage": "3202",
+        "volume": "10"
+      },
+      "referencePositions": [
+        "SUBCELLULAR LOCATION"
+      ],
+      "referenceComments": [
+        {
+          "value": "H37Rv",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "citation": {
+        "id": "21969609",
+        "citationType": "journal article",
+        "authors": [
+          "Kelkar D.S.",
+          "Kumar D.",
+          "Kumar P.",
+          "Balakrishnan L.",
+          "Muthusamy B.",
+          "Yadav A.K.",
+          "Shrivastava P.",
+          "Marimuthu A.",
+          "Anand S.",
+          "Sundaram H.",
+          "Kingsbury R.",
+          "Harsha H.C.",
+          "Nair B.",
+          "Prasad T.S.",
+          "Chauhan D.S.",
+          "Katoch K.",
+          "Katoch V.M.",
+          "Kumar P.",
+          "Chaerkady R.",
+          "Ramachandran S.",
+          "Dash D.",
+          "Pandey A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "21969609"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1074/mcp.m111.011627"
+          }
+        ],
+        "title": "Proteogenomic analysis of Mycobacterium tuberculosis by high resolution mass spectrometry.",
+        "publicationDate": "2011",
+        "journal": "Mol. Cell. Proteomics",
+        "firstPage": "M111.011627",
+        "lastPage": "M111.011627",
+        "volume": "10"
+      },
+      "referencePositions": [
+        "IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS]"
+      ],
+      "referenceComments": [
+        {
+          "value": "ATCC 25618 / H37Rv",
+          "type": "STRAIN"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0007744",
+          "source": "PubMed",
+          "id": "21969609"
+        }
+      ]
+    },
+    {
+      "citation": {
+        "id": "24855650",
+        "citationType": "journal article",
+        "authors": [
+          "Contreras H.",
+          "Joens M.S.",
+          "McMath L.M.",
+          "Le V.P.",
+          "Tullius M.V.",
+          "Kimmey J.M.",
+          "Bionghi N.",
+          "Horwitz M.A.",
+          "Fitzpatrick J.A.",
+          "Goulding C.W."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "24855650"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1074/jbc.m114.570119"
+          }
+        ],
+        "title": "Characterization of a Mycobacterium tuberculosis nanocompartment and its potential cargo proteins.",
+        "publicationDate": "2014",
+        "journal": "J. Biol. Chem.",
+        "firstPage": "18279",
+        "lastPage": "18289",
+        "volume": "289"
+      },
+      "referencePositions": [
+        "FUNCTION",
+        "SUBUNIT",
+        "SUBCELLULAR LOCATION"
+      ],
+      "referenceComments": [
+        {
+          "value": "H37Rv",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "citation": {
+        "id": "34751132",
+        "citationType": "journal article",
+        "authors": [
+          "Lien K.A.",
+          "Dinshaw K.",
+          "Nichols R.J.",
+          "Cassidy-Amstutz C.",
+          "Knight M.",
+          "Singh R.",
+          "Eltis L.D.",
+          "Savage D.F.",
+          "Stanley S.A."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "34751132"
+          },
+          {
+            "database": "DOI",
+            "id": "10.7554/elife.74358"
+          }
+        ],
+        "title": "A nanocompartment system contributes to defense against oxidative stress in Mycobacterium tuberculosis.",
+        "publicationDate": "2021",
+        "journal": "Elife",
+        "firstPage": "0",
+        "lastPage": "0",
+        "volume": "10"
+      },
+      "referencePositions": [
+        "IDENTIFICATION BY MASS SPECTROMETRY",
+        "FUNCTION",
+        "SUBCELLULAR LOCATION",
+        "DISRUPTION PHENOTYPE"
+      ],
+      "referenceComments": [
+        {
+          "value": "H37Rv",
+          "type": "STRAIN"
+        }
+      ]
+    },
+    {
+      "citation": {
+        "id": "34362927",
+        "citationType": "journal article",
+        "authors": [
+          "Andreas M.P.",
+          "Giessen T.W."
+        ],
+        "citationCrossReferences": [
+          {
+            "database": "PubMed",
+            "id": "34362927"
+          },
+          {
+            "database": "DOI",
+            "id": "10.1038/s41467-021-25071-y"
+          }
+        ],
+        "title": "Large-scale computational discovery and analysis of virus-derived microbial nanocompartments.",
+        "publicationDate": "2021",
+        "journal": "Nat. Commun.",
+        "firstPage": "4748",
+        "lastPage": "4748",
+        "volume": "12"
+      },
+      "referencePositions": [
+        "CLASSIFICATION"
+      ]
+    }
+  ],
+  "uniProtKBCrossReferences": [
+    {
+      "database": "EMBL",
+      "id": "Y12820",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CAA73350.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "EMBL",
+      "id": "AL123456",
+      "properties": [
+        {
+          "key": "ProteinId",
+          "value": "CCP43546.1"
+        },
+        {
+          "key": "Status",
+          "value": "-"
+        },
+        {
+          "key": "MoleculeType",
+          "value": "Genomic_DNA"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "NP_215313.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NC_000962.3"
+        }
+      ]
+    },
+    {
+      "database": "RefSeq",
+      "id": "WP_003404092.1",
+      "properties": [
+        {
+          "key": "NucleotideSequenceId",
+          "value": "NZ_NVQJ01000064.1"
+        }
+      ]
+    },
+    {
+      "database": "AlphaFoldDB",
+      "id": "I6WZG6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "SMR",
+      "id": "I6WZG6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "STRING",
+      "id": "83332.Rv0798c",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "MEROPS",
+      "id": "U56.001",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PaxDb",
+      "id": "I6WZG6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PRIDE",
+      "id": "I6WZG6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "DNASU",
+      "id": "885460",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "GeneID",
+      "id": "885460",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "KEGG",
+      "id": "mtu:Rv0798c",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PATRIC",
+      "id": "fig|83332.111.peg.885",
+      "properties": [
+        {
+          "key": "GeneDesignation",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "TubercuList",
+      "id": "Rv0798c",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "eggNOG",
+      "id": "COG1659",
+      "properties": [
+        {
+          "key": "ToxonomicScope",
+          "value": "Bacteria"
+        }
+      ]
+    },
+    {
+      "database": "OMA",
+      "id": "DSDWQPV",
+      "properties": [
+        {
+          "key": "Fingerprint",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "PhylomeDB",
+      "id": "I6WZG6",
+      "properties": [
+        {
+          "key": "Description",
+          "value": "-"
+        }
+      ]
+    },
+    {
+      "database": "Proteomes",
+      "id": "UP000001584",
+      "properties": [
+        {
+          "key": "Component",
+          "value": "Chromosome"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0140737",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:encapsulin nanocompartment"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IDA:UniProtKB"
+        }
+      ],
+      "evidences": [
+        {
+          "evidenceCode": "ECO:0000314",
+          "source": "PubMed",
+          "id": "24855650"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005576",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:extracellular region"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "GO",
+      "id": "GO:0005886",
+      "properties": [
+        {
+          "key": "GoTerm",
+          "value": "C:plasma membrane"
+        },
+        {
+          "key": "GoEvidenceType",
+          "value": "IEA:UniProtKB-SubCell"
+        }
+      ]
+    },
+    {
+      "database": "InterPro",
+      "id": "IPR007544",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Linocin_M18"
+        }
+      ]
+    },
+    {
+      "database": "Pfam",
+      "id": "PF04454",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "Linocin_M18"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    },
+    {
+      "database": "PIRSF",
+      "id": "PIRSF019254",
+      "properties": [
+        {
+          "key": "EntryName",
+          "value": "CFP29"
+        },
+        {
+          "key": "MatchStatus",
+          "value": "1"
+        }
+      ]
+    }
+  ],
+  "sequence": {
+    "value": "MNNLYRDLAPVTEAAWAEIELEAARTFKRHIAGRRVVDVSDPGGPVTAAVSTGRLIDVKAPTNGVIAHLRASKPLVRLRVPFTLSRNEIDDVERGSKDSDWEPVKEAAKKLAFVEDRTIFEGYSAASIEGIRSASSNPALTLPEDPREIPDVISQALSELRLAGVDGPYSVLLSADVYTKVSETSDHGYPIREHLNRLVDGDIIWAPAIDGAFVLTTRGGDFDLQLGTDVAIGYASHDTDTVRLYLQETLTFLCYTAEASVALSH",
+    "length": 265,
+    "molWeight": 28830,
+    "crc64": "00E7E96904D3B33A",
+    "md5": "CD6790497F4A0132109CD0F1CE4A5F66"
+  },
+  "extraAttributes": {
+    "countByCommentType": {
+      "FUNCTION": 1,
+      "SUBUNIT": 1,
+      "SUBCELLULAR LOCATION": 1,
+      "PTM": 1,
+      "DISRUPTION PHENOTYPE": 1,
+      "MISCELLANEOUS": 1,
+      "SIMILARITY": 1
+    },
+    "countByFeatureType": {
+      "Chain": 2,
+      "Initiator methionine": 1,
+      "Sequence conflict": 1
+    },
+    "uniParcId": "UPI00000D5E0F"
+  }
+}

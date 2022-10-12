@@ -1,0 +1,194 @@
+https://konbert.com/convert/json/to/sql?file_id=8078bc99-4f95-44fd-a3ce-c258a0bec473
+------------------------------------------------------------------------------------
+entryType                                                 string
+primaryAccession                                          string
+secondaryAccessions                                       array : string
+uniProtkbId                                               string
+entryAudit.firstPublicDate                                string
+entryAudit.lastAnnotationUpdateDate                       string
+entryAudit.lastSequenceUpdateDate                         string
+entryAudit.entryVersion                                   number
+entryAudit.sequenceVersion                                number
+annotationScore                                           number
+organism.scientificName                                   string
+organism.taxonId                                          number
+organism.lineage                                          array : string
+proteinExistence                                          string
+proteinDescription.recommendedName.fullName.evidences     array
+proteinDescription.recommendedName.fullName.value         string
+proteinDescription.alternativeNames                       array
+proteinDescription.contains                               array
+genes                                                     array
+comments                                                  array
+features                                                  array
+keywords                                                  array
+references                                                array
+uniProtKBCrossReferences                                  array
+sequence.value                                            string
+sequence.length                                           number
+sequence.molWeight                                        number
+sequence.crc64                                            string
+sequence.md5                                              string
+extraAttributes.countByCommentType.'FUNCTION'             number
+extraAttributes.countByCommentType.'SUBUNIT'              number
+extraAttributes.countByCommentType.'SUBCELLULAR LOCATION' number
+extraAttributes.countByCommentType.'PTM'                  number
+extraAttributes.countByCommentType.'DISRUPTION PHENOTYPE' number
+extraAttributes.countByCommentType.'MISCELLANEOUS'        number
+extraAttributes.countByCommentType.'SIMILARITY'           number
+extraAttributes.countByFeatureType.'Chain'                number
+extraAttributes.countByFeatureType.'Initiator methionine' number
+extraAttributes.countByFeatureType.'Sequence conflict'    number
+extraAttributes.uniParcId                                 string
+
+proteinDescription.recommendedName.fullName.evidences
+-----------------------------------------------------
+array : {}
+  evidenceCode : string -> proteinDescription.recommendedName.fullName.evidences[0].evidenceCode
+  source : string
+  id : string
+
+proteinDescription.alternativeNames
+-----------------------------------
+array : {}
+  fullName : {}
+    evidences : array : {}
+      evidenceCode : string -> proteinDescription.alternativeNames[0].fullName.evidences[0].evidenceCode
+      source : string
+      id : string
+    value : string
+  shortNames : array : {}
+    evidences : array : {}
+      evidenceCode : string
+      source : string -> proteinDescription.alternativeNames[0].shortNames[0].evidences[0].source
+      id : string
+    value : string
+
+proteinDescription.contains
+---------------------------
+array : {}
+  recommendedName : {}
+    fullName : {}
+      value : Type 1 encapsulin shell protein, N-terminally processed
+
+genes
+-----
+array : {}
+  geneName : {}
+    evidences : array : {}
+      evidenceCode : string
+      source : string
+      id : string
+    value : string -> genes[0].geneName.value
+  synonyms : array : {}
+    evidences : array : {}
+      evidenceCode : string -> genes[0].synonyms[0].evidences[0].evidenceCode
+      source : string
+      id : string
+    value : string
+  orderedLocusNames : array : {}
+    value : string
+
+proteinDescription.contains
+---------------------------
+texts : array : {}
+  evidences : array : {}
+    evidenceCode : string
+    source : string
+    id : string
+  value : string
+commentType : string [FUNCTION | SUBUNIT | SUBCELLULAR LOCATION | PTM | DISRUPTION PHENOTYPE | MISCELLANEOUS | SIMILARITY ]
+(esto de abajo creo que sólo si commentType=SUBCELLULAR LOCATION)
+note : {}
+  texts : array : {}
+    evidences : array : {}
+      evidenceCode : string
+      source : string
+      id : string
+    value : string
+subcellularLocations : array : {}
+  location: {}
+    evidences : array : {}
+      evidenceCode : string
+      source : string
+      id : string
+    value : string
+    id : string
+  topology : {}
+    evidences : array : {}
+      evidenceCode : string
+      source : string
+      id : string
+    value : string
+    id : string
+
+features
+--------
+array : {}
+  type : string
+  location : {}
+    start : {}
+      value : number
+      modifier : string
+    end : {}
+      value : number
+      modifier : string
+  description : string
+  evidences : array : {}
+    evidenceCode : string
+    source : string
+    id : string
+  alternativeSequence : {}
+    originalSequence : string
+    alternativeSequences : array : string
+
+keywords
+--------
+array : {}
+  id : string
+  category : string
+  name : string
+
+references
+----------
+array : {}
+  citation : {}
+    id : string
+    citationType : string
+    authors : array : string
+    citationCrossReferences : array : {}
+      database : string
+      id : string
+    title : string
+    publicationDate : number
+    journal : string
+    firstPage : string
+    lastPage : string
+    volume : number
+  referencePositions : array : string -> por ejemplo = (
+    CLASSIFICATION
+    DISRUPTION PHENOTYPE
+    FUNCTION
+    IDENTIFICATION BY MASS SPECTROMETRY
+    IDENTIFICATION BY MASS SPECTROMETRY [LARGE SCALE ANALYSIS]
+    NUCLEOTIDE SEQUENCE [GENOMIC DNA]
+    NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA]
+    PROTEIN SEQUENCE OF 1-19
+    SUBCELLULAR LOCATION
+    SUBUNIT)
+  referenceComments : array : {}
+    value : string
+    type : string
+  evidences : array : {}
+    evidenceCode : string
+    source : string
+    id : string
+
+uniProtKBCrossReferences
+------------------------
+array : {}
+  database : string
+  id : string
+  properties : array : {}
+    key : string
+    value : string
