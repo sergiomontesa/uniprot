@@ -1,6 +1,11 @@
 https://konbert.com/convert/json/to/sql?file_id=8078bc99-4f95-44fd-a3ce-c258a0bec473
+https://konbert.com/convert/json/to/sql?file_id=1ad7d2c3-6e0e-4a56-b0ca-75844002706d
 ------------------------------------------------------------------------------------
-entryType                                                 string
+entryType                                                 string -> por ejemplo = (
+  SWISSPROT("Swiss-Prot")
+  TREMBL("TrEMBL")
+  UNKNOWN("UNKNOWN")
+)
 primaryAccession                                          string
 secondaryAccessions                                       array : string
 uniProtkbId                                               string
@@ -9,11 +14,19 @@ entryAudit.lastAnnotationUpdateDate                       string
 entryAudit.lastSequenceUpdateDate                         string
 entryAudit.entryVersion                                   number
 entryAudit.sequenceVersion                                number
+entryAudit.creationDate                                   string (deprecated)
 annotationScore                                           number
 organism.scientificName                                   string
 organism.taxonId                                          number
 organism.lineage                                          array : string
-proteinExistence                                          string
+proteinExistence                                          string -> por ejemplo = (
+  PROTEIN_LEVEL("Evidence at protein level", "1: Evidence at protein level")
+  TRANSCRIPT_LEVEL("Evidence at transcript level", "2: Evidence at transcript level")
+  HOMOLOGY("Inferred from homology", "3: Inferred from homology")
+  PREDICTED("Predicted", "4: Predicted")
+  UNCERTAIN("Uncertain", "5: Uncertain")
+  UNKNOWN("UNKNOWN", "UNKNOWN")
+)
 proteinDescription.recommendedName.fullName.evidences     array
 proteinDescription.recommendedName.fullName.value         string
 proteinDescription.alternativeNames                       array
@@ -31,14 +44,25 @@ sequence.crc64                                            string
 sequence.md5                                              string
 extraAttributes.countByCommentType.'FUNCTION'             number
 extraAttributes.countByCommentType.'SUBUNIT'              number
+extraAttributes.countByCommentType.'INTERACTION'          number
 extraAttributes.countByCommentType.'SUBCELLULAR LOCATION' number
+extraAttributes.countByCommentType.'INDUCTION'            number
+extraAttributes.countByCommentType.'DOMAIN'               number
 extraAttributes.countByCommentType.'PTM'                  number
 extraAttributes.countByCommentType.'DISRUPTION PHENOTYPE' number
+extraAttributes.countByCommentType.'BIOTECHNOLOGY'        number
 extraAttributes.countByCommentType.'MISCELLANEOUS'        number
 extraAttributes.countByCommentType.'SIMILARITY'           number
-extraAttributes.countByFeatureType.'Chain'                number
 extraAttributes.countByFeatureType.'Initiator methionine' number
-extraAttributes.countByFeatureType.'Sequence conflict'    number
+extraAttributes.countByFeatureType.'Chain'                number
+extraAttributes.countByFeatureType.'Transmembrane'        number
+extraAttributes.countByFeatureType.'Region'               number
+extraAttributes.countByFeatureType.'Coiled coil'          number
+extraAttributes.countByFeatureType.'Modified residue'     number
+extraAttributes.countByFeatureType.'Mutagenesis'          number
+extraAttributes.countByFeatureType.'Helix'                number
+extraAttributes.countByFeatureType.'Beta strand'          number
+extraAttributes.countByFeatureType.'Turn'                 number
 extraAttributes.uniParcId                                 string
 
 proteinDescription.recommendedName.fullName.evidences
@@ -87,6 +111,16 @@ array : {}
       id : string
     value : string
   orderedLocusNames : array : {}
+    evidences : array : {}
+      evidenceCode : string
+      source : string
+      id : string
+    value : string
+  orfNames : array : {}
+    evidences : array : {}
+      evidenceCode : string
+      source : string
+      id : string
     value : string
 
 proteinDescription.contains
@@ -98,7 +132,7 @@ texts : array : {}
     id : string
   value : string
 commentType : string [FUNCTION | SUBUNIT | SUBCELLULAR LOCATION | PTM | DISRUPTION PHENOTYPE | MISCELLANEOUS | SIMILARITY ]
-(esto de abajo creo que sólo si commentType=SUBCELLULAR LOCATION)
+(esto de abajo creo que sÃ³lo si commentType=SUBCELLULAR LOCATION)
 note : {}
   texts : array : {}
     evidences : array : {}
@@ -154,7 +188,17 @@ references
 array : {}
   citation : {}
     id : string
-    citationType : string
+    citationType : string -> por ejemplo = (
+      BOOK   
+      ELECTRONIC_ARTICLE   
+      JOURNAL_ARTICLE    
+      PATENT   
+      SUBMISSION   
+      THESIS   
+      UNKNOWN    
+      UNPUBLISHED_JOURNAL_ARTICLE    
+      UNPUBLISHED_OBSERVATIONS
+    )
     authors : array : string
     citationCrossReferences : array : {}
       database : string
