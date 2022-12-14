@@ -5,14 +5,17 @@ import 'dotenv/config.js';
 import jsonexport from 'jsonexport'; //Ver: https://www.npmjs.com/package/jsonexport
 
 import entryUtils from '../utils/entryUtils.js';
+import stringUtils from '../utils/stringUtils.js';
 
 const uniProtUrl = process.env.UNIPROT_URL;
 const userAgent = process.env.USER_AGENT;
 const resultSize = process.env.RESULT_SIZE;
 const defaultConfigureFields = process.env.DEFAULT_CONFIGURE_FIELDS;
-const defaultFields = process.env.DEFAULT_FIELDS; 
+const defaultFields = process.env.DEFAULT_FIELDS;
 
-const nombreFicheroCsv = 'uniProt-search.csv';
+const regenerarSearchCsv = false;
+const nombreFicheroSearchCsv = 'uniProt-search.csv';
+const nombreFicheroTfgCsv = 'uniProt-tfg.csv';
 
 async function getCountSearchResults(query) {
   const response = await axios.request({
@@ -71,14 +74,27 @@ async function getSearchResults(query, fields) {
 
 async function allSearchResultsToCsv(query, fields = defaultFields) {
 
-  console.log(`Borrando el fichero (si existe) '${nombreFicheroCsv}' antes de crear uno nuevo...`);
-  fs.unlink('./' + nombreFicheroCsv, (err) => {
+  if (regenerarSearchCsv) {
+    console.log(`Borrando el fichero (si existe) '${nombreFicheroSearchCsv}' antes de crear uno nuevo...`);
+    fs.unlink('./' + nombreFicheroSearchCsv, (err) => {
+      if (err) {
+        console.log(`Ha ocurrido un error: ${err}`);
+        return;
+      }
+    });
+    fs.appendFile('./' + nombreFicheroSearchCsv, '"PRIMARYACCESSION";"FAD";"FMN";"F420";"FAD o FMN o F420";"FIELD";"VALUE"\n', err => {
+      if (err) console.log(`Ha ocurrido un error: ${err}`);
+    });
+  }
+
+  console.log(`Borrando el fichero (si existe) '${nombreFicheroTfgCsv}' antes de crear uno nuevo...`);
+  fs.unlink('./' + nombreFicheroTfgCsv, (err) => {
     if (err) {
       console.log(`Ha ocurrido un error: ${err}`);
       return;
     }
   });
-  fs.appendFile('./' + nombreFicheroCsv, '"PRIMARYACCESSION";"RV";"EC";"FAD";"FMN";"F420";"FAD o FMN o F420";"FIELD";"VALUE"\n', err => {
+  fs.appendFile('./' + nombreFicheroTfgCsv, '"PRIMARYACCESSION";"RV";"EC"\n', err => {
     if (err) console.log(`Ha ocurrido un error: ${err}`);
   });
 
@@ -86,7 +102,7 @@ async function allSearchResultsToCsv(query, fields = defaultFields) {
   const countSearchResults = await getCountSearchResults(query);
   console.log(`Entre revisados y no revisados hay un total de ${countSearchResults} resultados.`)
   const pages = Math.ceil(countSearchResults / resultSize);
-  
+
   let csv = '';
   let entradasFiltradas = 0;
   let next = '';
@@ -103,7 +119,7 @@ async function allSearchResultsToCsv(query, fields = defaultFields) {
       allSearchResults = await getSearchResults(query, fields);
     } else allSearchResults = await getNextSearchResults(next);
     if (pages > 1 && i < pages) next = allSearchResults.next.replace('<https://', 'https://').replace('>; rel="next"', '');
-    
+
     for (let searchResult of allSearchResults.results) {
 
       /*
@@ -115,9 +131,11 @@ async function allSearchResultsToCsv(query, fields = defaultFields) {
       let todaLaEntrada = JSON.stringify(entrySearchResults);
       */
 
+      //if (searchResult.primaryAccession === 'P9WG57') console.log(JSON.stringify(searchResult));
+
       // Voy a buscar [ FAD | FMN | F420 ] en el resultado de la búsqueda
       let todaLaEntrada = JSON.stringify(searchResult);
-      if (todaLaEntrada.indexOf("FAD") >= 0 || 
+      if (todaLaEntrada.indexOf("FAD") >= 0 ||
           todaLaEntrada.indexOf("FMN") >= 0 ||
           todaLaEntrada.indexOf("F420") >= 0) {
 
@@ -127,25 +145,37 @@ async function allSearchResultsToCsv(query, fields = defaultFields) {
         const rv = entryUtils.getRv(searchResult);
         const ecvalue = entryUtils.getEcvalue(searchResult);
 
-        // Convertimos el JSON en un CSV (añadiendo los campos calculados anteriormente y alguna fórmula EXCEL)
-        let csvCalculado = '';
-        /*A*/ csvCalculado += '"' + searchResult.primaryAccession + '";'; //PRIMARYACCESSION=IZQUIERDA(H2; ENCONTRAR("."; H2; 1) - 1)
-        /*B*/ csvCalculado += '"' + rv + '";';
-        /*C*/ csvCalculado += '"' + ecvalue + '";';
-        /*D*/ csvCalculado += '"=SI(ESNUMERO(ENCONTRAR(""FAD"";I2));""SI"";"""")";';
-        /*E*/ csvCalculado += '"=SI(ESNUMERO(ENCONTRAR(""FMN"";I2));""SI"";"""")";';
-        /*F*/ csvCalculado += '"=SI(ESNUMERO(ENCONTRAR(""F420"";I2));""SI"";"""")";';
-        /*G*/ csvCalculado += '"=SI(O(IGUAL(D2;""SI"");IGUAL(E2;""SI"");IGUAL(F2;""SI""));""SI"";"""")";';
-        /*H = FIELD */ csvCalculado += searchResult.primaryAccession;
-        /*I = VALUE */
+        if (regenerarSearchCsv) {
 
-        jsonexport(searchResult, { rowDelimiter: ';', forceTextDelimiter: true, mainPathItem: csvCalculado, arrayPathString: ',' }, function(err, csv) {
+          // Convertimos el JSON en un CSV (añadiendo los campos calculados anteriormente y alguna fórmula EXCEL)
+          let csvCalculadoSearch = '';
+          /*A*/ csvCalculadoSearch += '"' + searchResult.primaryAccession + '";'; //PRIMARYACCESSION=IZQUIERDA(F2; ENCONTRAR("."; H2; 1) - 1)
+          /*B*/ csvCalculadoSearch += '"=SI(ESNUMERO(ENCONTRAR(""FAD"";G2));""SI"";"""")";';
+          /*C*/ csvCalculadoSearch += '"=SI(ESNUMERO(ENCONTRAR(""FMN"";G2));""SI"";"""")";';
+          /*D*/ csvCalculadoSearch += '"=SI(ESNUMERO(ENCONTRAR(""F420"";G2));""SI"";"""")";';
+          /*E*/ csvCalculadoSearch += '"=SI(O(IGUAL(B2;""SI"");IGUAL(C2;""SI"");IGUAL(D2;""SI""));""SI"";"""")";';
+          /*F = FIELD */
+          /*G = VALUE */
+
+          jsonexport(searchResult, { rowDelimiter: ';', forceTextDelimiter: true, mainPathItem: csvCalculadoSearch, arrayPathString: ',' }, function(err, csv) {
+            if (err) console.log(`Ha ocurrido un error: ${err}`);
+            else {
+              fs.appendFile('./' + nombreFicheroSearchCsv, csv + "\n", err => {
+                if (err) console.log(`Ha ocurrido un error: ${err}`);
+              });
+            }
+          });
+
+        }
+
+        // Convertimos el JSON en un CSV (añadiendo los campos calculados anteriormente y alguna fórmula EXCEL)
+        let csvCalculadoTfg = '';
+        /*A*/ csvCalculadoTfg += '"' + searchResult.primaryAccession + '";';
+        /*B*/ csvCalculadoTfg += '"' + rv + '";';
+        /*C*/ csvCalculadoTfg += '"' + ecvalue + '";';
+
+        fs.appendFile('./' + nombreFicheroTfgCsv, csvCalculadoTfg + "\n", err => {
           if (err) console.log(`Ha ocurrido un error: ${err}`);
-          else {
-            fs.appendFile('./' + nombreFicheroCsv, csv, err => {
-              if (err) console.log(`Ha ocurrido un error: ${err}`);
-            });
-          }
         });
 
       } // fin-if
