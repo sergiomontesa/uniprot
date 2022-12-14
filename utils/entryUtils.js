@@ -9,10 +9,17 @@ function getRv(searchResult) {
     for (let gen of searchResult.genes) {
       if (Array.isArray(gen?.orderedLocusNames)) {
         for (let ordered of gen.orderedLocusNames) {
-          if (ordered.value.toUpperCase().indexOf('RV') >= 0) {
+          if (ordered.value.indexOf('Rv') >= 0) {
             rv.push(ordered.value); 
           }
         }
+      }
+      if (Array.isArray(gen?.orfNames)) {
+        for (let orf of gen.orfNames) {
+          if (orf.value.indexOf('Rv') >= 0) {
+            rv.push(orf.value); 
+          }
+        }        
       } 
     }
   }
