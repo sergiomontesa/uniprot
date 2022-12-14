@@ -22,3 +22,7 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Ficheros que genera la herramienta
+uniProt-search.csv
+uniProt-tfg.csv
